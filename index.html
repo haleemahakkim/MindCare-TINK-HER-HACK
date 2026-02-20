@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindCare – Mental Health Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">🧠 MindCare</div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#check">Mental Check</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<section id="home">
+  <h1>Welcome to MindCare</h1>
+  <p>Your mental wellness companion</p>
+</section>
+
+<section id="check">
+  <!-- your questionnaire code here -->
+</section>
+
+<section id="about">
+  <h2>About MindCare</h2>
+  <p>This project helps users do a basic mental health self-check.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: support@mindcare.com</p>
+</section>
+<div class="container">
+  <h1>🧠 MindCare</h1>
+  <p class="subtitle">Mental Health Self Check</p>
+
+  <div class="question">
+    <label>Q1. How are you feeling today?</label>
+    <select id="mood">
+      <option value="0">Happy</option>
+      <option value="1">Neutral</option>
+      <option value="2">Sad</option>
+      <option value="3">Stressed</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label>Q2. How well did you sleep last night?</label>
+    <select id="sleep">
+      <option value="0">Very good</option>
+      <option value="1">Good</option>
+      <option value="2">Poor</option>
+      <option value="3">Very poor</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label>Q3. How often do you feel anxious or worried?</label>
+    <select id="anxiety">
+      <option value="0">Never</option>
+      <option value="1">Sometimes</option>
+      <option value="2">Often</option>
+      <option value="3">Always</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label>Q4. Do you have difficulty concentrating?</label>
+    <select id="focus">
+      <option value="0">No</option>
+      <option value="1">Sometimes</option>
+      <option value="2">Yes</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label>Q5. Do you feel low motivation or tired most of the day?</label>
+    <select id="motivation">
+      <option value="0">No</option>
+      <option value="1">Sometimes</option>
+      <option value="2">Yes</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label>Q6. Do you avoid talking to friends or family recently?</label>
+    <select id="social">
+      <option value="0">No</option>
+      <option value="1">Sometimes</option>
+      <option value="2">Yes</option>
+    </select>
+  </div>
+
+  <div class="question warning">
+    <label>⚠️ Q7. Have you had thoughts of harming yourself?</label>
+    <select id="selfharm">
+      <option value="0">No</option>
+      <option value="1">Rarely</option>
+      <option value="3">Yes</option>
+    </select>
+  </div>
+
+  <button onclick="analyze()">Submit</button>
+
+  <div id="result" class="result"></div>
+
+  <div id="help" class="help hidden">
+    <h3>🚨 Support & Help</h3>
+    <p>📞 Mental Health Helpline (India): <b>14416</b></p>
+    <p>Please reach out to a trusted adult or professional.</p>
+  </div>
+
+  <button onclick="sendToAi()">Get AI consultation</button>
+  <p><b>AI Response:</b></p>
+  
+  <div id="response"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
